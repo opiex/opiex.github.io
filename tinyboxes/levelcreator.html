@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="http://arielverber.com/tinyboxes/levelcreator.html">
+    <meta property="og:image" content="http://arielverber.com/tinyboxes/img/levelcreator.png">
+    <meta property="og:title" content="Tiny Boxes - Level Creator" />
+    <meta property="og:description" content="Create your own tiny boxes level and submit them to the game developer." />
+    <meta property="fb:app_id" content="339237753092175" />
+
+    <title>Tiny Boxes | Level Creator</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link href="css/levelcreator.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="levelcreator-header">
+        <h3>level creator</h3>
+    </div>
+
+    <div class="form-overlay">
+        <div class="form-container">
+            <form class="submit-form">
+                <h3>Thanks for making this game more awesome.</h3>
+                <span id="subheader">Each week I’ll add 5 new levels.<br>If you want your level to be there, fill in this form.</span>
+                <div class="fields">
+                    <span>level name (be creative!)</span>
+                    <input type="text" name="levelName">
+                    <span>your name</span>
+                    <input type="text" name="creatorName">
+                    <span>website / social media page</span>
+                    <input type="text" name="creatorUrl">
+                </div>
+                <button type="button" class="normal bluebtn" id="send" onclick="submitThanks()">send as email</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="map">
+
+        <div id="col0" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+        </div>
+
+        <div id="col1" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+        </div>
+        <div id="col2" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col3" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col4" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col5" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col6" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col7" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col8" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col9" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col10" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col11" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col12" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col13" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col14" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+
+        </div>
+        <div id="col15" class="col">
+            <div class="sq" id="sq0"></div>
+            <div class="sq" id="sq1"></div>
+            <div class="sq" id="sq2"></div>
+            <div class="sq" id="sq3"></div>
+            <div class="sq" id="sq4"></div>
+            <div class="sq" id="sq5"></div>
+            <div class="sq" id="sq6"></div>
+            <div class="sq" id="sq7"></div>
+            <div class="sq" id="sq8"></div>
+            <div class="sq" id="sq9"></div>
+            <div class="sq" id="sq10"></div>
+            <div class="sq" id="sq11"></div>
+            <div class="sq" id="sq12"></div>
+            <div class="sq" id="sq13"></div>
+            <div class="sq" id="sq14"></div>
+        </div>
+
+
+
+        <div class="tutorial">
+            <div id="tut01">
+                <p>Hit space to begin/end drawing, click a box to teleport after started movement.</p>
+            </div>
+
+            <div id="finished-map-message">
+              <p>Your level looks beautiful.</p>
+              <button class="normal greybtn" id="restart" onclick="restart()">restart</button>
+              <button class="normal bluebtn" id="submit" onclick="openSubmit()">submit</button>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/cube.js"></script>
+        <script src="js/portal.js"></script>
+        <script src="js/levelcreator.js"></script>
+        <script src="js/levelcreatorform.js"></script>
+        <script src="js/jquerymobile.custom.js"></script>
+        <script src="js/creatormobilesupport.js"></script>
+        <script>
+            (function(h, o, t, j, a, r) {
+                h.hj = h.hj || function() {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+                h._hjSettings = {
+                    hjid: 283174,
+                    hjsv: 5
+                };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+</body>
+
+</html>
