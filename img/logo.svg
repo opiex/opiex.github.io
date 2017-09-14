@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="46px" viewBox="0 0 69 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.994990907,2.00979899 C0.445472603,1.05323009 0.899784928,0.277777778 2.00228533,0.277777778 L30.9977147,0.277777778 C32.1035463,0.277777778 32.5586649,1.04602784 32.0050091,2.00979899 L17.4949909,27.2679788 C16.9454726,28.2245477 16.0586649,28.2317499 15.5050091,27.2679788 L0.994990907,2.00979899 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header" transform="translate(0.000000, -4.000000)">
+            <g id="Group-2" transform="translate(0.000000, 4.000000)">
+                <g id="Path-2" transform="translate(36.000000, 18.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#7C8384" xlink:href="#path-1"></use>
+                    <polygon fill="#000000" opacity="0.139925373" points="17.5104075 27.2295286 7 0.301753692 2.20679621 0.301753692"></polygon>
+                </g>
+                <path d="M26.0070346,0.728495404 C26.5554342,-0.226126248 27.4461086,-0.223440543 27.9929654,0.728495404 L53.0070346,44.2715046 C53.5554342,45.2261262 53.1077828,46 51.9979097,46 L2.00209026,46 C0.896366344,46 0.446108624,45.2234405 0.992965445,44.2715046 L26.0070346,0.728495404 Z M26.5014849,39.8724014 C26.7768072,39.3905874 27.2265182,39.3964068 27.4985151,39.8724014 L31,46 L23,46 L26.5014849,39.8724014 Z" id="Combined-Shape" fill="#7C8384"></path>
+            </g>
+        </g>
+    </g>
+</svg>
