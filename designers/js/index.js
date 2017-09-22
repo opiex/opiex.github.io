@@ -314,9 +314,17 @@ var list = [
     img: "ransegall.png",
     name: "Ran Segall",
     website: "www.ransegall.com",
-    companies: "Prospero, AppFront, Nexar",
+    companies: "Prospero, any.do, Nexar",
     current: "busyfreelance",
     contact: "ransegall@gmail.com"
+  },
+  {
+    img: "sagischreiber.png",
+    name: "Sagi Shrieber",
+    website: "www.instagram.com/sagishrieber",
+    companies: "Fiverr, SimilarWeb, Ebay",
+    current: "freelance",
+    contact: "sagishrieber@gmail.com"
   }
 ];
 
