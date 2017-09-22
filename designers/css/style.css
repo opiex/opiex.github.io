@@ -1,5 +1,5 @@
 html{
-  background: #09111C;
+  background: #202225;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,20 +7,20 @@ html{
 }
 
 ::selection{
-  background-color: #55A0FB;
-  color: #F0FAFF;
+  background-color: #00FFD2;
+  color: #202225;
 }
 
 ::-moz-selection{
-  background-color: #55A0FB;
-  color: #F0FAFF;
+  background-color: #00FFD2;
+  color: #202225;
 }
 
 body {
     margin: 0px;
     position: absolute;
     font-family: 'Raleway', sans-serif;
-    color: #fff;
+    color: #F5F7FA;
     text-align: center;
     height: 100%;
     width: 100%;
@@ -54,38 +54,38 @@ svg:hover{
   padding-top: 30px;
   position: fixed;
   z-index: 100;
-background-image: linear-gradient(-180deg, #09111C 0%, rgba(9,17,28,0.00) 100%);
+background-image: linear-gradient(-180deg, #131517 0%, rgba(18,21,23,0.00) 100%);
 height: 100px;
 }
 
 .header span{
   font-size: 12px;
-  color: #0062FF;
+  color: #00FFD2;
   margin-right: 20px;
 }
 
 a{
-  color: #0062FF;
+  color: #00FFD2;
   transition: 0.4s all;
 }
 
 a:hover{
-  color: #fff;
+  color: #F5F7FA;
 }
 
 .header button{
   background: none;
-  border: 2px solid #0062FF;
+  border: 2px solid #00FFD2;
   border-radius: 100px;
   transition: 0.4s all;
-  color: #0062ff;
+  color: #00FFD2;
   padding: 10px 25px;
   cursor: pointer;
 }
 
 .header button:hover{
-  color: #fff;
-  border: 2px solid #fff;
+  color: #F5F7FA;
+  border: 2px solid #F5F7FA;
 }
 
 
@@ -106,18 +106,6 @@ a:hover{
   display: inline;
 }
 
-/*.header .navigation a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  opacity: 0.5;
-  transition: 0.4s all;
-}
-
-.header .navigation a:hover{
-  opacity: 1;
-}*/
-
 h1{
   font-family: 'Libre Baskerville', serif;
   font-size: 72px;
@@ -126,7 +114,7 @@ h1{
 }
 
 h1 span{
-  color: #0062FF;
+  color: #00FFD2;
 }
 
 .description2 p{
@@ -137,7 +125,7 @@ h1 span{
 }
 
 .description p{
-  color: #0062FF;
+  color: #00FFD2;
   margin-top: -25px;
 }
 
@@ -147,20 +135,20 @@ h1 span{
 
 .headline a{
   margin-left: 13px;
-  color: #fff;
+  color: #F5F7FA;
 }
 
 .headline a:hover{
   margin-left: 13px;
-  color: #0062FF;
+  color: #00FFD2;
 }
 
 .footer a, .description2 a{
-  color: #fff;
+  color: #F5F7FA;
 }
 
 .footer a:hover, .description2 a:hover{
-  color: #0062FF;
+  color: #00FFD2;
 }
 
 .list .toggle{
@@ -174,7 +162,7 @@ h1 span{
 .border{
   width: 40px;
   height: 16px;
-  border: 2px solid #fff;
+  border: 2px solid #F5F7FA;
   border-radius: 100px;
   padding: 2px 2px 2px 2px;
   float: right;
@@ -189,7 +177,7 @@ h1 span{
 .inside{
   width: 16px;
   height: 16px;
-  background: #fff;
+  background: #F5F7FA;
   border-radius: 100px;
   position: absolute;
   transition: 0.4s all;
@@ -220,7 +208,7 @@ h1 span{
 }
 
 .item{
-background: #0E1929;
+background: #2F3236;
 width: 48%;
 display: inline-block;
 margin-top: 30px;
@@ -228,9 +216,14 @@ height: 250px;
 position: relative;
 cursor: pointer;
 transition: 0.4s all;
+opacity: 1;
 }
 
-.item:nth-child(even){
+.item-show{
+
+}
+
+.linkOfItem:nth-child(even){
   margin-left: 3.5%;
 }
 
@@ -244,6 +237,11 @@ transition: 0.4s all;
   transition: 0.4s all;
   opacity: 0;
 }
+
+/*.item:hover{
+  box-shadow: 0 2px 175px 0 rgba(0,0,0,0.31);
+  z-index: 10;
+}*/
 
 .item:hover>.overlay{
   opacity: 0.4;
@@ -295,12 +293,13 @@ transition: 0.4s all;
   font-size: 13px;
   line-height: 19px;
   margin: 0;
-  color: #fff;
+  color: #F5F7FA;
   text-decoration: none;
 }
 
 .rightside .details a:hover{
-  color: #0062FF;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .companies, .contact, .status{
@@ -309,7 +308,7 @@ transition: 0.4s all;
 
 .item .leftside h2.name{
   position: absolute;
-  color: #fff;
+  color: #F5F7FA;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
