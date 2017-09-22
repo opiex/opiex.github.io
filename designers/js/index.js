@@ -113,9 +113,13 @@ function createNewDiv(image, name, website, companies, status, email) {
   if (status === 'employed') {
     newStatus.append("Happily Employed 💼");
   } else if (status === 'freelance') {
-    newStatus.append("Freelance 🖼");
-  } else {
-    newStatus.append("Looking for Opportunities ☺️");
+    newStatus.append("Freelance 🎨");
+  }
+  else if (status === 'busyfreelance') {
+    newStatus.append("Freelance, but busy 🏋️");
+  }
+  else {
+    newStatus.append("Looking for Opportunities 🖼");
   }
 
   //Email
@@ -216,7 +220,7 @@ var list = [
     img: "limorpeleg.png",
     name: "Limor Peleg",
     website: "www.behance.net/peleglimor0aeb",
-    companies: "Pionet Group, JFrog, Kaminario, Discount Bank",
+    companies: "Pionet Group, JFrog, Kaminario",
     current: "freelance",
     contact: "peleg.limor@gmail.com"
   }, {
@@ -289,7 +293,6 @@ var list = [
     current: "employed",
     contact: "marinz.box@gmail.com"
   },
-
   {
     img: "urizur.jpg",
     name: "Uri Zur",
@@ -297,6 +300,14 @@ var list = [
     companies: "Sears, Waze, Zlango",
     current: "employed",
     contact: "uriandzur@gmail.com"
+  },
+  {
+    img: "ransegall.png",
+    name: "Ran Segall",
+    website: "www.ransegall.com",
+    companies: "Prospero, AppFront, Nexar",
+    current: "busyfreelance",
+    contact: "ransegall@gmail.com"
   }
 ];
 
