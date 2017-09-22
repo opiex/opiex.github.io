@@ -306,6 +306,10 @@ opacity: 1;
   margin-top: 12px;
 }
 
+.contact .email{
+  display: none;
+}
+
 .item .leftside h2.name{
   position: absolute;
   color: #F5F7FA;

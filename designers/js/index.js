@@ -47,13 +47,14 @@ var item = `
       </div>
       <div class=\"contact\">
         <h4>Contact:</h4>
-        <p><a></a></p>
+        <p><a class="showemail">Show email</a><a class="email"></a></p>
       </div>
     </div>
   </div>
   <div class=\"overlay\">
   </div>
 `;
+
 
 function moveInsideLeft() {
   $('.inside').removeClass('insideright').addClass('insideleft');
@@ -92,7 +93,7 @@ function createNewDiv(image, name, website, companies, status, email) {
   var newWebsite = div.getElementsByClassName("website")[0].getElementsByTagName("a")[0];
   var newCompanies = div.getElementsByClassName("companies")[0].getElementsByTagName("p")[0];
   var newStatus = div.getElementsByClassName("status")[0].getElementsByTagName("p")[0];
-  var newContact = div.getElementsByClassName("contact")[0].getElementsByTagName("a")[0];
+  var newContact = div.getElementsByClassName("contact")[0].getElementsByClassName("email")[0];
   var newOverlay = div.getElementsByClassName("overlay")[0];
   // console.log(div.getElementsByClassName("name")[0]);
 
@@ -353,5 +354,14 @@ function loadElements() {
 }
 
 loadElements();
+
+$('.showemail').on("click", function(e){
+  e.preventDefault();
+  var email = $(this).next();
+  $(this).fadeOut(function(){
+    email.fadeIn();
+  });
+  // alert(email);
+});
 
 // $('.item').click()
