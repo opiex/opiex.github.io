@@ -351,17 +351,16 @@ function loadElements() {
       }
     }
   }
+
+  $('.showemail').on("click", function(e){
+    e.preventDefault();
+    var email = $(this).next();
+    $(this).fadeOut(function(){
+      email.fadeIn();
+    });
+  });
 }
 
 loadElements();
-
-$('.showemail').on("click", function(e){
-  e.preventDefault();
-  var email = $(this).next();
-  $(this).fadeOut(function(){
-    email.fadeIn();
-  });
-  // alert(email);
-});
 
 // $('.item').click()
