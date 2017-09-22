@@ -376,7 +376,7 @@ opacity: 1;
     position: relative;
   }
 
-  .item:nth-child(even){
+  .linkOfItem:nth-child(even){
     margin-left: 0;
   }
 }

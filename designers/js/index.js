@@ -15,6 +15,8 @@ var showEmployed = 1;
 
 var delay = 0;
 
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 function shuffle(a) {
   var j,
     x,
@@ -132,7 +134,13 @@ function createNewDiv(image, name, website, companies, status, email) {
   $('.items').append(a);
 
   //Background image + gradient
-  newBackground = getRandomGradient() + ", url('img/designers/" + image + "') no-repeat center";
+
+  if (isMobile){
+    newBackground = '#2F3236';
+  }
+  else{
+    newBackground = getRandomGradient() + ", url('img/designers/" + image + "') no-repeat center";
+  }
   $(newOverlay).css("background", newBackground);
 }
 
@@ -359,6 +367,7 @@ function loadElements() {
       email.fadeIn();
     });
   });
+
 }
 
 loadElements();
