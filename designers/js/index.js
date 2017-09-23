@@ -1,5 +1,20 @@
 /*jshint esversion: 6 */
 
+function changeFavicon(img) {
+    var favicon = document.querySelector('link[rel="shortcut icon"]');
+
+    if (!favicon) {
+        favicon = document.createElement('link');
+        favicon.setAttribute('rel', 'shortcut icon');
+        var head = document.querySelector('head');
+        head.appendChild(favicon);
+    }
+
+
+    favicon.setAttribute('type', 'image/png');
+    favicon.setAttribute('href', img);
+}
+
 var hexas = [
   '7200FF',
   '0062FF',
@@ -10,6 +25,16 @@ var hexas = [
   'E43162',
   '1E2F8A'
 ];
+
+var oks = [
+  '👌', '👌🏻', '👌🏼', '👌🏽', '👌🏾', '👌🏿'
+];
+var currentRandom = Math.floor(Math.random() * oks.length);
+var newOk = oks[currentRandom];
+var ok = $('.side-headline').find('span');
+ok.text(newOk);
+changeFavicon('img/favicon'+currentRandom+'.png');
+
 var currentHexa = 0;
 var showEmployed = 1;
 
