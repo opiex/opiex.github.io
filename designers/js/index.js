@@ -350,6 +350,14 @@ var list = [
     companies: "Fiverr, SimilarWeb, Ebay",
     current: "freelance",
     contact: "sagishrieber@gmail.com"
+  },
+  {
+    img: "avichaybaras.png",
+    name: "Avichay Baras",
+    website: "baras.co",
+    companies: "Wix, Netcraft, Rollout",
+    current: "unemployed",
+    contact: "avichai@baras.co"
   }
 ];
 
@@ -359,13 +367,18 @@ function toggleEmployed() {
     $('.border').removeClass("faded");
     $('.toggle').removeClass("faded");
     moveInsideRight();
+    ga('send', 'event', 'Toggle', 'Toggle Off', '1');
   } else {
     showEmployed = 0;
     $('.border').addClass("faded");
     $('.toggle').addClass("faded");
     moveInsideLeft();
+    ga('send', 'event', 'Toggle', 'Toggle On', '2');
   }
   loadElements();
+
+  //ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
+
 }
 
 shuffle(list);
@@ -395,6 +408,7 @@ function loadElements() {
 
   $('.showemail').on("click", function(e){
     e.preventDefault();
+    ga('send', 'event', 'Email Request', 'Email Requested', '3');
     var email = $(this).next();
     $(this).fadeOut(function(){
       email.fadeIn();
