@@ -352,7 +352,7 @@ var list = [
   },
   {
     img: "avichaybaras.png",
-    name: "Avichay Baras",
+    name: "Avichai Baras",
     website: "baras.co",
     companies: "Wix, Netcraft, Rollout",
     current: "unemployed",
