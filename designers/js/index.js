@@ -357,6 +357,14 @@ var list = [
     companies: "Wix, Netcraft, Rollout",
     current: "unemployed",
     contact: "avichai@baras.co"
+  },
+  {
+    img: "naorhazan.png",
+    name: "Naor Hazan",
+    website: "www.linkedin.com/in/naor-hazan-434069105/",
+    companies: "Woo, glide, flok",
+    current: "employed",
+    contact: "Naorhazan22@gmail.com"
   }
 ];
 
