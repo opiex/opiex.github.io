@@ -122,7 +122,6 @@ function createNewDiv(image, name, website, companies, status, email) {
   var newStatus = div.getElementsByClassName("status")[0].getElementsByTagName("p")[0];
   var newContact = div.getElementsByClassName("contact")[0].getElementsByClassName("email")[0];
   var newOverlay = div.getElementsByClassName("overlay")[0];
-  // console.log(div.getElementsByClassName("name")[0]);
 
   //Name
   newName.append(name);
@@ -388,7 +387,6 @@ function loadElements() {
   var j = 0;
   document.getElementsByClassName('items')[0].innerHTML = "";
   var current = "";
-  console.log(showEmployed);
   if (showEmployed !== 0) {
     for (i = 0; i <= list.length - 1; i++) {
       current = list[i];
