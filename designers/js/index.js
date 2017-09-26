@@ -109,7 +109,7 @@ function generateGradient() {
   return "#7200FF";
 }
 
-function createNewDiv(image, name, website, companies, status, email) {
+function createNewDiv(image, name, website, companies, status, email, isNew = "false") {
   var div = document.createElement('div');
   var a = document.createElement('a');
 
@@ -152,6 +152,14 @@ function createNewDiv(image, name, website, companies, status, email) {
   //Email
   newContact.append(email);
   newContact.href = "mailto:" + email;
+
+  //new badge
+  if(isNew==="true"){
+    var newBadge = document.createElement('div');
+    newBadge.className = "new-badge";
+    newBadge.innerHTML = "new";
+    $(newOverlay).after(newBadge);
+  }
 
   //Done
   $(a).append(div);
@@ -348,7 +356,7 @@ var list = [
     website: "www.instagram.com/sagishrieber",
     companies: "Fiverr, SimilarWeb, Ebay",
     current: "freelance",
-    contact: "sagishrieber@gmail.com"
+    contact: "sagishrieber@gmail.com",
   },
   {
     img: "avichaybaras.png",
@@ -356,7 +364,7 @@ var list = [
     website: "baras.co",
     companies: "Wix, Netcraft, Rollout",
     current: "unemployed",
-    contact: "avichai@baras.co"
+    contact: "avichai@baras.co",
   },
   {
     img: "naorhazan.png",
@@ -364,7 +372,97 @@ var list = [
     website: "www.linkedin.com/in/naor-hazan-434069105/",
     companies: "Woo, glide, flok",
     current: "employed",
-    contact: "Naorhazan22@gmail.com"
+    contact: "Naorhazan22@gmail.com",
+  },
+  {
+    img: "guyisacar.jpg",
+    name: "Guy Isacar",
+    website: "www.guyisacar.com",
+    companies: "eToro, OverOps, Convexum",
+    current: "freelance",
+    contact: "guy.isacar@gmail.com",
+    new: "true"
+  },
+  {
+    img: "lexnau.png",
+    name: "Alexander Sidorenko",
+    website: "www.behance.net/LEXNAU",
+    companies: "Ebay, HP, JUNO",
+    current: "unemployed",
+    contact: "lexnau.contact@gmail.com",
+    new: "true"
+  },
+  {
+    img: "liatzeldes.gif",
+    name: "Liat Zeldes",
+    website: "liatzeldes.com",
+    companies: "alpha, soomla, lightricks",
+    current: "busyfreelance",
+    contact: "liat.zeldes@gmail.com",
+    new: "true"
+  },
+  {
+    img: "ohadshalev.png",
+    name: "Ohad Shalev",
+    website: "www.poratshalev.com",
+    companies: "Wix, Perion, Foresight",
+    current: "freelance",
+    contact: "ohad@poratshalev.com",
+    new: "true"
+  },
+  {
+    img: "sagimaori.png",
+    name: "Sagi Maori",
+    website: "dribbble.com/SagiMaori",
+    companies: "Philips, Microsof",
+    current: "employed",
+    contact: "sagimao@gmail.com",
+    new: "true"
+  },
+  {
+    img: "evgeniykaz.gif",
+    name: "Evgeniy Kazinec",
+    website: "ribbble.com/EvgeniyKazinec",
+    companies: "dapulse, Simbla",
+    current: "employed",
+    contact: "vzlomk@gmail.com",
+    new: "true"
+  },
+  {
+    img: "kerenhossy.png",
+    name: "Keren Hossy",
+    website: "www.behance.net/keren_h",
+    companies: "Fiverr, Sears",
+    current: "employed",
+    contact: "kerenhossy@gmail.com",
+    new: "true"
+  },
+  {
+    img: "benfrank.gif",
+    name: "Ben Frankforter",
+    website: "www.benfrankforter.com",
+    companies: "Tipit, BillGuard, Arik Ben Simhon",
+    current: "employed",
+    contact: "benfrankforter@gmail.com",
+    new: "true"
+  },
+  {
+    img: "ilya.jpg",
+    name: "Ilya Boruhov",
+    website: "www.behance.net/ibsgraphic",
+    companies: "Wix, Amdocs, Sizmek",
+    current: "employed",
+    contact: "ibsgraphic@gmail.com",
+    new: "true"
+  },
+  {
+    img: "ronitklein.png",
+    name: "Ronit Klein",
+    website: "dribbble.com/ronit-klein",
+    companies: "Netcraft, Wix, Create",
+    current: "freelance",
+    contact: "ronitk@createfuture.co.il",
+    new: "true"
   }
 ];
 
@@ -388,6 +486,10 @@ function toggleEmployed() {
 
 }
 
+function websiteVisit(name){
+  ga('send', 'event', 'Website Visits', name);
+}
+
 shuffle(list);
 
 function loadElements() {
@@ -398,14 +500,14 @@ function loadElements() {
   if (showEmployed !== 0) {
     for (i = 0; i <= list.length - 1; i++) {
       current = list[i];
-      createNewDiv(current.img, current.name, current.website, current.companies, current.current, current.contact);
+      createNewDiv(current.img, current.name, current.website, current.companies, current.current, current.contact, current.new);
       $('.numberofdesigners').html(i + 1);
     }
   } else {
     for (i = 0; i <= list.length - 1; i++) {
       current = list[i];
       if (current.current !== "employed") {
-        createNewDiv(current.img, current.name, current.website, current.companies, current.current, current.contact);
+        createNewDiv(current.img, current.name, current.website, current.companies, current.current, current.contact, current.new);
         j++;
         $('.numberofdesigners').html(j);
       }

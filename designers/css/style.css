@@ -219,6 +219,18 @@ transition: 0.4s all;
 opacity: 1;
 }
 
+.item .new-badge{
+  background: transparent;
+  font-size: 10px;
+  border: 1px solid #00FFD2;
+  color: #00FFD2;
+  border-radius: 100px;
+  padding: 4px 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .item-show{
 
 }
