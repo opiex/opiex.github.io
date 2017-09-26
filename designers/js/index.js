@@ -320,8 +320,8 @@ var list = [
   {
     img: "valburtakov.gif",
     name: "Val Burtakov",
-    website: "daskulll.tumblr.com",
-    companies: "YOTPO, eBay, Purple",
+    website: "daskull.tumblr.com",
+    companies: "YOTPO, GoUFO, Purple",
     current: "employed",
     contact: "valentinburtakov@gmail.com"
   },
