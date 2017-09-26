@@ -422,7 +422,7 @@ var list = [
   {
     img: "evgeniykaz.gif",
     name: "Evgeniy Kazinec",
-    website: "ribbble.com/EvgeniyKazinec",
+    website: "dribbble.com/EvgeniyKazinec",
     companies: "dapulse, Simbla",
     current: "employed",
     contact: "vzlomk@gmail.com",
