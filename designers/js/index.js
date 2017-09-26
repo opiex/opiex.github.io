@@ -377,7 +377,7 @@ var list = [
   {
     img: "guyisacar.jpg",
     name: "Guy Isacar",
-    website: "www.guyisacar.com",
+    website: "www.guyisacar.co",
     companies: "eToro, OverOps, Convexum",
     current: "freelance",
     contact: "guy.isacar@gmail.com",
