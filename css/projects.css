@@ -11,8 +11,8 @@
 }
 
 .project-bg {
-    padding-top: 124px;
-    padding-bottom: 124px;
+    padding-top: 90px;
+    padding-bottom: 70px;
 }
 
 .project-bg h1{
@@ -33,7 +33,7 @@
 .single-col img{
   display: block;
   margin: 0 auto;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 
 .project-bg img {
@@ -180,6 +180,25 @@
 
 .margin-from-image{
   margin-top: 50px;
+}
+
+.waze-1{
+background-image: linear-gradient(-180deg, #587780 0%, #90A8AF 100%);
+}
+
+.waze-2{
+  /*background: #F5F5F5;*/
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #F4F4F4 100%);
+}
+
+.waze-notifications img{
+  max-width: 900px;
+}
+
+.waze-legend{
+  background: #151B2B;
+  background-image: linear-gradient(-198deg, #212B47 0%, #121825 97%);
+  padding-bottom: 140px;
 }
 
 @media (max-width: 1024px){
