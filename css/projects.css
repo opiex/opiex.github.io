@@ -206,4 +206,8 @@ background-image: linear-gradient(-180deg, #587780 0%, #90A8AF 100%);
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  .waze-notifications img{
+    max-width: 80%;
+  }
 }
