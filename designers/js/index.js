@@ -176,9 +176,6 @@ function createNewDiv(image, name, website, companies, status, email, isNew = "f
   $(newOverlay).css("background", newBackground);
 }
 
-// createNewDiv("0002.gif", "Ariel Verber", "www.arielverber.com", "YO", "employed", "hi@arielverber.com");
-// createNewDiv("0001.gif", "Artiom Dashinsky", "www.arielverber.com", "YO", "freelance", "hi@arielverber.com");
-
 var list = [
   {
     img: "tevihirshhorn.jpg",
@@ -308,14 +305,14 @@ var list = [
     contact: "hello@galshir.com"
   },
 
-  // {
-  //   img: "arielverber.png",
-  //   name: "Ariel Verber",
-  //   website: "www.arielverber.com",
-  //   companies: "Waze, Mobilize",
-  //   current: "freelance",
-  //   contact: "hi@arielverber.com"
-  // },
+  {
+    img: "arielverber.png",
+    name: "Ariel Verber",
+    website: "www.arielverber.com",
+    companies: "Waze, Mobilize, Slide.ly",
+    current: "freelance",
+    contact: "hi@arielverber.com"
+  },
 
   {
     img: "valburtakov.gif",
@@ -356,7 +353,7 @@ var list = [
     website: "www.instagram.com/sagishrieber",
     companies: "Fiverr, SimilarWeb, Ebay",
     current: "freelance",
-    contact: "sagishrieber@gmail.com",
+    contact: "sagishrieber@gmail.com"
   },
   {
     img: "avichaybaras.png",
@@ -364,7 +361,7 @@ var list = [
     website: "baras.co",
     companies: "Wix, Netcraft, Rollout",
     current: "unemployed",
-    contact: "avichai@baras.co",
+    contact: "avichai@baras.co"
   },
   {
     img: "naorhazan.png",
@@ -372,7 +369,7 @@ var list = [
     website: "www.linkedin.com/in/naor-hazan-434069105/",
     companies: "Woo, glide, flok",
     current: "employed",
-    contact: "Naorhazan22@gmail.com",
+    contact: "Naorhazan22@gmail.com"
   },
   {
     img: "guyisacar.jpg",
@@ -380,8 +377,7 @@ var list = [
     website: "www.guyisacar.co",
     companies: "eToro, OverOps, Convexum",
     current: "freelance",
-    contact: "guy.isacar@gmail.com",
-    new: "true"
+    contact: "guy.isacar@gmail.com"
   },
   {
     img: "lexnau.png",
@@ -389,8 +385,7 @@ var list = [
     website: "www.behance.net/LEXNAU",
     companies: "Ebay, HP, JUNO",
     current: "unemployed",
-    contact: "lexnau.contact@gmail.com",
-    new: "true"
+    contact: "lexnau.contact@gmail.com"
   },
   {
     img: "liatzeldes.gif",
@@ -398,8 +393,7 @@ var list = [
     website: "liatzeldes.com",
     companies: "alpha, soomla, lightricks",
     current: "busyfreelance",
-    contact: "liat.zeldes@gmail.com",
-    new: "true"
+    contact: "liat.zeldes@gmail.com"
   },
   {
     img: "ohadshalev.png",
@@ -407,8 +401,7 @@ var list = [
     website: "www.poratshalev.com",
     companies: "Wix, Perion, Foresight",
     current: "freelance",
-    contact: "ohad@poratshalev.com",
-    new: "true"
+    contact: "ohad@poratshalev.com"
   },
   {
     img: "sagimaori.png",
@@ -416,8 +409,7 @@ var list = [
     website: "dribbble.com/SagiMaori",
     companies: "Philips, Microsof",
     current: "employed",
-    contact: "sagimao@gmail.com",
-    new: "true"
+    contact: "sagimao@gmail.com"
   },
   {
     img: "evgeniykaz.gif",
@@ -425,8 +417,7 @@ var list = [
     website: "dribbble.com/EvgeniyKazinec",
     companies: "dapulse, Simbla",
     current: "employed",
-    contact: "vzlomk@gmail.com",
-    new: "true"
+    contact: "vzlomk@gmail.com"
   },
   {
     img: "kerenhossy.png",
@@ -434,8 +425,7 @@ var list = [
     website: "www.behance.net/keren_h",
     companies: "Fiverr, Sears",
     current: "employed",
-    contact: "kerenhossy@gmail.com",
-    new: "true"
+    contact: "kerenhossy@gmail.com"
   },
   {
     img: "benfrank.gif",
@@ -443,8 +433,7 @@ var list = [
     website: "www.benfrankforter.com",
     companies: "Tipit, BillGuard, Arik Ben Simhon",
     current: "employed",
-    contact: "benfrankforter@gmail.com",
-    new: "true"
+    contact: "benfrankforter@gmail.com"
   },
   {
     img: "ilya.jpg",
@@ -452,8 +441,7 @@ var list = [
     website: "www.behance.net/ibsgraphic",
     companies: "Wix, Amdocs, Sizmek",
     current: "employed",
-    contact: "ibsgraphic@gmail.com",
-    new: "true"
+    contact: "ibsgraphic@gmail.com"
   },
   {
     img: "ronitklein.png",
@@ -461,7 +449,33 @@ var list = [
     website: "dribbble.com/ronit-klein",
     companies: "Netcraft, Wix, Create",
     current: "freelance",
-    contact: "ronitk@createfuture.co.il",
+    contact: "ronitk@createfuture.co.il"
+  },
+  {
+    img: "yarontamuz.png",
+    name: "Yaron Tamuz",
+    website: "yarontamuz.com",
+    companies: "Gett, Geektime, Demisto",
+    current: "employed",
+    contact: "studio@yarontamuz.com",
+    new: "true"
+  },
+  {
+    img: "yaronazulay.png",
+    name: "Yaron Azulay",
+    website: "dribbble.com/yaronaz",
+    companies: "Wix, Saatchi & Saatchi",
+    current: "employed",
+    contact: "yaronaz@gmail.com",
+    new: "true"
+  },
+  {
+    img: "nuritbahat.jpg",
+    name: "Nurit Bahat",
+    website: "www.behance.net/nukib",
+    companies: "Webydo, ichannel, Honeybook",
+    current: "employed",
+    contact: "nurabfree@gmail.com",
     new: "true"
   }
 ];
