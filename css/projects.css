@@ -1,7 +1,3 @@
-.top-margin-from-text {
-    margin-top: 85px;
-}
-
 .full-width {
     text-align: center;
 }
@@ -77,6 +73,37 @@
 
 .next-up h1 {
     margin-top: 0px;
+}
+
+.momento-1{
+  background-image: linear-gradient(-180deg, #1C1417 0%, #2E2739 100%);
+}
+
+.momento-2{
+  background: #F7F5F5;
+  margin-top: 0px;
+}
+
+.momento-2 img {
+  box-shadow: 16px 21px 64px 0 #DACCCC;
+    margin: 50px 50px 50px 50px;
+    border-radius: 2px;
+    width:70%;
+    max-width:400px;
+}
+
+.momento-3{
+background-image: linear-gradient(-43deg, #FF6767 0%, #FFD1C4 47%, #FF9BE4 100%);
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.momento-3 img{
+  margin-bottom: 0px;
+}
+
+.momento-1 img{
+  max-width: 710px;
 }
 
 .fdbck-1, .fdbck-5{
@@ -201,6 +228,10 @@ background-image: linear-gradient(-180deg, #587780 0%, #90A8AF 100%);
   padding-bottom: 140px;
 }
 
+.top-margin-from-text {
+    margin-top: 85px;
+}
+
 @media (max-width: 1024px){
   .project-bg{
     padding-top: 80px;
@@ -208,6 +239,10 @@ background-image: linear-gradient(-180deg, #587780 0%, #90A8AF 100%);
   }
 
   .waze-notifications img{
+    max-width: 80%;
+  }
+
+  .momento-1 img{
     max-width: 80%;
   }
 }
