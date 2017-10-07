@@ -129,9 +129,10 @@ function createNewDiv(image, name, website, companies, status, email, isNew = "f
   //Website
   a.href = "http://" +website;
   $(a).addClass("linkOfItem");
+
   a.target = "_blank";
   newWebsite.append(website);
-  // newWebsite.href = newWebsite;
+  $(a).on("click", function() { websiteVisit(name) });
 
   //Companies
   newCompanies.append(companies);
@@ -496,15 +497,15 @@ function toggleEmployed() {
   }
   loadElements();
 
-  //ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
-
 }
 
 function websiteVisit(name){
-  ga('send', 'event', 'Website Visits', name);
+  ga('send','event','click', name);
 }
 
 shuffle(list);
+
+
 
 function loadElements() {
   delay = 0;
@@ -527,6 +528,8 @@ function loadElements() {
       }
     }
   }
+
+
 
   $('.showemail').on("click", function(e){
     e.preventDefault();

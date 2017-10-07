@@ -115,6 +115,21 @@ a:hover {
 
 .full-width{
   width: 100%;
+  border-radius: 8px;
+}
+
+.twothirds-width{
+  width: 64.10%;
+  border-radius: 8px;
+}
+
+.third-width{
+  width: 33%;
+  border-radius: 8px;
+}
+
+.full-width img, .twothirds-width img, .third-width img{
+  border-radius: 8px;
 }
 
 .about-image{
@@ -163,6 +178,7 @@ color: #7D8485;
   text-align: center;
   opacity: 0;
   transition: 0.5s all;
+  border-radius: 8px;
 }
 
 .overlay:hover{
@@ -178,7 +194,7 @@ color: #7D8485;
   font-family: soleil;
   font-size: 32px;
   font-weight: 700;
-  transition: 0.5s all;
+  transition: 0.7s all;
 }
 
 .overlay:hover .project-name{
@@ -186,23 +202,28 @@ color: #7D8485;
 }
 
 .raphael-overlay{
-background-color: rgba(142,207,255,0.85);
+background-color: rgba(142,207,255,0.4);
+box-shadow: 0 11px 43px 0 #A2D3FF;
 }
 
 .momento-overlay{
-background-color: rgba(255, 169, 202, 0.85);
+background-color: rgba(255, 169, 202, 0.5);
+box-shadow: 0 11px 43px 0 rgba(255,192,205,0.7);
 }
 
 .mobilize-overlay{
-  background: rgba(172,227,231,0.85);
+  background: rgba(172,227,231,0.6);
+  box-shadow: 0 11px 43px 0 rgba(146,224,215,0.45);
 }
 
 .stripes-overlay{
-  background: rgba(255,197,180,0.85);
+  background: rgba(255,197,180,0.5);
+  box-shadow: 0 11px 43px 0 rgba(255,192,205,0.5);
 }
 
 .waze-overlay{
-  background: rgba(179,232,248,0.85);
+  background: rgba(179,232,248,0.5);
+  box-shadow: 0 11px 43px 0 rgba(0,198,255,0.3);
 }
 
 .footer{
@@ -267,4 +288,13 @@ background-color: rgba(255, 169, 202, 0.85);
     .project-name{
       font-size: 20px;
     }
+
+    .twothirds-width{
+      width: 63%;
+    }
+
+    .third-width{
+      width: 32.5%;
+    }
+
 }
