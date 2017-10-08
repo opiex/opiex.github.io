@@ -500,6 +500,7 @@ function toggleEmployed() {
 }
 
 function websiteVisit(name){
+  console.log(name);
   ga('send','event','click', 'websitevisit', name, '4');
 }
 
