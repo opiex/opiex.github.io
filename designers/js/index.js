@@ -500,7 +500,7 @@ function toggleEmployed() {
 }
 
 function websiteVisit(name){
-  ga('send','event','click', name);
+  ga('send','event','click', 'websitevisit', name, 4);
 }
 
 shuffle(list);
