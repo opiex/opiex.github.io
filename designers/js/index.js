@@ -478,6 +478,15 @@ var list = [
     current: "employed",
     contact: "nurabfree@gmail.com",
     new: "true"
+  },
+  {
+    img: "hadasboneh.jpg",
+    name: "Hadas Boneh",
+    website: "www.hadasboneh.com",
+    companies: "Bizzabo, 3 Bears studio",
+    current: "employed",
+    contact: "hadasboneh@gmail.com",
+    new: "true"
   }
 ];
 
