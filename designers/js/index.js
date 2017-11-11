@@ -494,7 +494,7 @@ var list = [
     new: "true"
   },
   {
-    img: "semion.png",
+    img: "semion.jpg",
     name: "Semion Bolter",
     website: "Behance.net/sbolter",
     companies: "Amdocs, Everest, Netcraft",
