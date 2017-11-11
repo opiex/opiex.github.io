@@ -433,7 +433,7 @@ var list = [
     name: "Ben Frankforter",
     website: "www.benfrankforter.com",
     companies: "Tipit, BillGuard, Arik Ben Simhon",
-    current: "employed",
+    current: "unemployed",
     contact: "benfrankforter@gmail.com"
   },
   {
@@ -458,8 +458,7 @@ var list = [
     website: "yarontamuz.com",
     companies: "Gett, Geektime, Demisto",
     current: "employed",
-    contact: "studio@yarontamuz.com",
-    new: "true"
+    contact: "studio@yarontamuz.com"
   },
   {
     img: "yaronazulay.png",
@@ -467,8 +466,7 @@ var list = [
     website: "dribbble.com/yaronaz",
     companies: "Wix, Saatchi & Saatchi",
     current: "employed",
-    contact: "yaronaz@gmail.com",
-    new: "true"
+    contact: "yaronaz@gmail.com"
   },
   {
     img: "nuritbahat.jpg",
@@ -476,8 +474,7 @@ var list = [
     website: "www.behance.net/nukib",
     companies: "Webydo, ichannel, Honeybook",
     current: "employed",
-    contact: "nurabfree@gmail.com",
-    new: "true"
+    contact: "nurabfree@gmail.com"
   },
   {
     img: "hadasboneh.jpg",
@@ -485,7 +482,51 @@ var list = [
     website: "www.hadasboneh.com",
     companies: "Bizzabo, 3 Bears studio",
     current: "employed",
-    contact: "hadasboneh@gmail.com",
+    contact: "hadasboneh@gmail.com"
+  },
+  {
+    img: "jenok.png",
+    name: "Yevgeny Kanterman",
+    website: "www.jenokman.com",
+    companies: "Mobli, Any.do, Engie",
+    current: "freelance",
+    contact: "yevkan@gmail.com",
+    new: "true"
+  },
+  {
+    img: "semion.png",
+    name: "Semion Bolter",
+    website: "Behance.net/sbolter",
+    companies: "Amdocs, Everest, Netcraft",
+    current: "employed",
+    contact: "hello@bolter.digital",
+    new: "true"
+  },
+  {
+    img: "shiranaflalo.png",
+    name: "Shiran Aflalo",
+    website: "dribbble.com/shiran_aflalo",
+    companies: "HERE Technologies, Sears Israel, Toluna",
+    current: "employed",
+    contact: "shiranafla@gmail.com",
+    new: "true"
+  },
+  {
+    img: "",
+    name: "Rotem Elimelech",
+    website: "adoric.com",
+    companies: "Wix, Pampers, Adoric",
+    current: "busyfreelance",
+    contact: "rotem914@gmail.com",
+    new: "true"
+  },
+  {
+    img: "yuvalkesh.gif",
+    name: "Yuval Keshtcher",
+    website: "instagram.com/yuvalkesh1/",
+    companies: "SodaStream, Shlomo Sixt, Gool",
+    current: "busyfreelance",
+    contact: "yuval.kesh@gmail.com",
     new: "true"
   }
 ];
