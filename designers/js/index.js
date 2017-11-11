@@ -512,7 +512,7 @@ var list = [
     new: "true"
   },
   {
-    img: "",
+    img: "rotem.png",
     name: "Rotem Elimelech",
     website: "adoric.com",
     companies: "Wix, Pampers, Adoric",
