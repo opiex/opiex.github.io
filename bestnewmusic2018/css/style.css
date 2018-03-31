@@ -131,8 +131,8 @@ a:hover{
 }
 
 .headline{
-  font-size: 12px;
-  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h1{
