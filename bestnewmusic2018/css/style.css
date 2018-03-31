@@ -347,18 +347,29 @@ background-image: url("../img/months/dec.png");
 
 @media (max-width: 600px){
 
-  .intro{
-    margin-top: 130px;
+  .header .logo{
+    margin-left: 15px;
   }
 
-  .headline{
-    display: none;
+  .intro{
+    margin-top: 4px;
+  }
+
+  .intro h1{
+    font-size: 50px;
+    letter-spacing: 0px;
+    line-height: 45px;
+  }
+
+  .intro span{
+    font-size: 14px;
   }
 
   .description p{
     font-size: 13px;
     line-height: 28px;
     margin-top: 30px;
+    padding: 40px 40px;
   }
 
   .list{
