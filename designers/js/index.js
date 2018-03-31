@@ -210,8 +210,8 @@ var list = [
     img: "robinkane.gif",
     name: "Robin Kane",
     website: "www.robinkane-art-house.com/",
-    companies: "WIX, Horizon 2020, European Union",
-    current: "employed",
+    companies: "Wix, Create, European Union",
+    current: "freelance",
     contact: "robinkane.art@gmail.com"
   }, {
     img: "edenvidal.png",
