@@ -10,7 +10,7 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: -2; */
+  /* z-index: -10; */
 }
 
 ::selection{
@@ -29,7 +29,7 @@ background-image: linear-gradient(-180deg, #171319 0%, #40353E 100%);
     font-family: 'Rubik', sans-serif;
     color: #FEFBFF;
     text-align: center;
-    padding-bottom:40px;
+    padding-bottom: 10px;
 }
 
 svg, svg g{
@@ -91,6 +91,7 @@ hr{
   z-index: 100;
 /* background-image: linear-gradient(-180deg, #131517 0%, rgba(18,21,23,0.00) 100%); */
 height: 100px;
+position: relative;
 }
 
 .header .logo{
@@ -182,6 +183,7 @@ h1 span{
   margin-bottom: 0px;
   padding-bottom:30px;
   z-index: 100;
+  position: relative;
 }
 
 .footer a, .description a{
@@ -199,6 +201,8 @@ h1 span{
 .items{
   vertical-align: top;
   z-index: 2;
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 .item{
