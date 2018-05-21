@@ -480,8 +480,8 @@ var list = [
     img: "hadasboneh.jpg",
     name: "Hadas Boneh",
     website: "www.hadasboneh.com",
-    companies: "Bizzabo, 3 Bears studio",
-    current: "employed",
+    companies: "Seebo, Bizzabo, 3 Bears studio",
+    current: "freelance",
     contact: "hadasboneh@gmail.com"
   },
   {
