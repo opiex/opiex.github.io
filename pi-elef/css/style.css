@@ -164,7 +164,8 @@ h1 span{
 .description{
   margin: 0 auto;
   font-size: 18px;
-  max-width: 600px;
+  width: 600px;
+  max-width: 85%;
   line-height: 25px;
   margin-top: 50px;
 }
