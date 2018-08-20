@@ -78,4 +78,5 @@ generateNew();
 
 $(".more").click(function(){
   generateNew();
+  ga('send','event','pi-elef', 'pi-elef', 'pi-elef-clicked-to-generate-new');
 });
