@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-705.000000, -792.000000)">
+            <g id="play" transform="translate(705.000000, 792.000000)">
+                <circle id="Oval" fill-opacity="0.197633605" fill="#000000" cx="37" cy="37" r="37"></circle>
+                <path d="M28.8952381,28.9384531 L28.8952381,44.6777717 C28.8952381,45.8375696 29.8354401,46.7777717 30.9952381,46.7777717 C31.3517801,46.7777717 31.7024516,46.6869932 32.0142084,46.5139905 L46.1955999,38.6443312 C47.2097155,38.0815695 47.5756102,36.8032578 47.0128484,35.7891421 C46.822234,35.4456486 46.5390934,35.162508 46.1955999,34.9718936 L32.0142084,27.1022343 C31.0000927,26.5394725 29.721781,26.9053672 29.1590193,27.9194828 C28.9860166,28.2312396 28.8952381,28.5819111 28.8952381,28.9384531 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

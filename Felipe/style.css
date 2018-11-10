@@ -1,0 +1,291 @@
+html{
+  width: 100%;
+}
+
+body{
+  font-family: 'raleway', 'Helvetica', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #121D47;
+  margin: 0;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #080F2A;
+}
+
+.header{
+  text-align: left;
+}
+
+.logo{
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  width: 60px;
+  z-index: 99;
+}
+
+.hero{
+  text-align: center;
+  margin-top: -20px;
+  color: #121D47;
+  padding: 150px 30px 110px 30px;
+  background: #fff;
+}
+
+h1{
+  font-family: 'Playfair Display', 'Helvetica', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+h2{
+  font-family: 'Playfair Display', 'Helvetica', sans-serif;
+}
+
+.hero p{
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.features-text-container{
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.features{
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  /* padding-top: 90px; */
+}
+
+.features-text-container p{
+  line-height: 35px;
+  width: 100%;
+  max-width: 1300px;
+  display: inline;
+  margin: 0 auto;
+}
+
+.feature-img-container{
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+.feature-img-container .overlay:hover{
+opacity: 1;
+}
+
+h4{
+  margin-bottom: 10px;
+}
+
+.feature p{
+  line-height: 10px;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.info{
+  padding-top: -5px;
+  float: left;
+  margin-left: 60px;
+}
+
+hr{
+  border: 1px solid rgba(3,0,110,0.04);
+  max-width: 800px;
+}
+
+.feature{
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 140px;
+  font-size: 14px;
+  margin-top: 35px;
+}
+
+{
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  padding-top:20px;
+}
+
+.feature img{
+  width: 289px;
+}
+
+
+.btn{
+  padding: 4px 8px;
+  margin: 0px 4px;
+  border-radius: 3px;
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(3,0,110,0.25);
+  box-shadow: inset 0 -1px 0 0 rgba(3,0,110,0.13);
+  font-size: 14px;
+}
+
+.ctas{
+  margin-top: 30px;
+  position: relative;
+}
+
+.button-free, .button-pro{
+  position: relative;
+  padding: 20px 14px;
+  width: 200px;
+  display: inline-block;
+  margin: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600px;
+  border-radius: 4px;
+  transition: 0.3s all;
+}
+
+.badge-free, .badge-pro{
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  margin-top: 7px;
+}
+
+.badge-pro{
+  border: 1px solid #03006E;
+  margin-top: 12px;
+  color: #03006E;
+}
+
+.badge-free{
+  border: 1px solid #1CE6C1;
+  margin-top: 12px;
+  color: #1CE6C1;
+}
+
+.button-pro{
+  background: #00FFE2;
+/* border: 1px solid rgba(3,0,110,0.20); */
+}
+
+.button-free{
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(31,66,135,0.10);
+/* color: #fff; */
+}
+.button-free:hover{
+  box-shadow: 0 2px 4px 0 rgba(31,66,135,0.21);
+}
+
+.fliptext{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-7px;
+  margin-left:-45px;
+
+}
+
+.price{
+  opacity: 0.7;
+}
+
+
+.footer{
+  margin: 0 auto;
+  background: #F3FFFD;
+  padding-top: 70px;
+  padding-bottom:90px;
+  margin-top: 80px;
+}
+
+.footer a{
+  text-decoration: underline;
+}
+
+.footer-container{
+  line-height: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 850px) {
+
+  .logo{
+    top: 15px;
+    left: 15px;
+  }
+  .hero{
+    padding: 130px 10px 90px 10px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+  .iframe-vimeo{
+    position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border: 0;
+  }
+
+  .videocontainer{
+    position: relative;
+    margin-top: 40px;
+     overflow: hidden;
+     padding-top: 56.25%;
+  }
+
+  .feature{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .feature-img-container{
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  .info{
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .feature img{
+    width: 160px;
+  }
+
+  .footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+  }
+
+  hr{
+    margin-top: 30px;
+    margin-bottom: -15px;
+  }
+}
