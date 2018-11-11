@@ -342,6 +342,8 @@ hr{
   .explanation-text-container{
     text-align: center;
     display: block;
+    margin: 0 auto;
+    width: auto;
 }
 
 }
