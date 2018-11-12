@@ -2,6 +2,17 @@ html{
   width: 100%;
 }
 
+::-moz-selection {
+  background: #565656;
+  color: #fff;
+}
+
+::selection {
+  background: #565656;
+  color: #fff;
+}
+
+
 body{
   font-family: 'raleway', 'Helvetica', sans-serif;
   font-size: 16px;
