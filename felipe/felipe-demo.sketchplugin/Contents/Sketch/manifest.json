@@ -1,0 +1,28 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Wireframes to UI",
+      "identifier": "rectangle-to-button",
+      "description": "Turn wireframes into UI",
+      "script": "rectangleToSymbol.js",
+      "shortcut": "cmd option k"
+    }
+  ],
+  "menu": {
+    "title": "🧙‍ Felipe (free)",
+    "items": [
+      "rectangle-to-button"
+    ]
+  },
+  "version": "0.1.0",
+  "description": "Magically turn wireframes into UI Symbols",
+  "name": "felipe-demo",
+  "identifier": "felipe-demo",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "author": "Ariel Verber",
+  "authorEmail": "opiedesigns@gmail.com"
+}
