@@ -93,6 +93,19 @@
     max-width:400px;
 }
 
+.finance-2{
+  background: #FFFFFF;
+  margin-top: 0px;
+}
+
+.finance-2 img {
+  box-shadow: 16px 21px 64px 0 #EFEFEF;
+    margin: 50px 50px 50px 50px;
+    border-radius: 2px;
+    width:70%;
+    max-width:400px;
+}
+
 .medicount-1{
   background: #F7F5F5;
   margin-top: 0px;
