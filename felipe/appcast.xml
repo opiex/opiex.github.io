@@ -4,9 +4,9 @@
     <title>Felipe for Sketch</title>
     <description>Magically turn wireframes to UI.</description>
     <language>en</language>
-    
+
     <item>
-      <title>Version 0.1.0</title>
+      <title>Version 0.2.0</title>
       <description>
         <![CDATA[
             <ul>
@@ -14,7 +14,7 @@
             </ul>
           ]]>
       </description>
-      <enclosure url="https://arielverber.com/felipe" sparkle:version="1.1"/>
+      <enclosure url="https://arielverber.com/felipe/felipev0.2.0.zip" sparkle:version="1.1"/>
     </item>
 
   </channel>
