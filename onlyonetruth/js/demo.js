@@ -4,12 +4,12 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2018, Codrops
  * http://www.codrops.com
  */
 {
-	// Calculates the offsetTop or offsetLeft of an element relative to the viewport 
+	// Calculates the offsetTop or offsetLeft of an element relative to the viewport
 	// (not counting with any transforms the element might have)
 	const getOffset = (elem, axis) => {
 		let offset = 0;
@@ -56,7 +56,7 @@
 		e = e || window.event;
 		if (e.preventDefault)
 			e.preventDefault();
-		e.returnValue = false;  
+		e.returnValue = false;
 	}
 	const preventDefaultForScrollKeys = (e) => {
 		if (keys[e.keyCode]) {
@@ -75,12 +75,12 @@
 	const enableScroll = () => {
 		if (window.removeEventListener)
 			window.removeEventListener('DOMMouseScroll', preventDefault, false);
-		window.onmousewheel = document.onmousewheel = null; 
-		window.onwheel = null; 
-		window.ontouchmove = null;  
-		document.onkeydown = null;  
+		window.onmousewheel = document.onmousewheel = null;
+		window.onwheel = null;
+		window.ontouchmove = null;
+		document.onkeydown = null;
 	}
-	
+
 	// The GridItem class.
     class GridItem {
         constructor(el) {
@@ -101,7 +101,7 @@
 			// And access the spans/letters.
 			this.DOM.numberLetters = this.DOM.tilt.number.querySelectorAll('span');
 			// Configuration for when moving/tilting the elements on hover.
-			this.tiltconfig = {   
+			this.tiltconfig = {
                 title: {translation : {x: [-8,8], y: [4,-4]}},
                 number: {translation : {x: [-5,5], y: [-10,10]}},
                 img: {translation : {x: [-15,15], y: [-10,10]}}
@@ -114,15 +114,15 @@
 		}
 		initEvents() {
 			/**
-			 * Mouseenter: 
+			 * Mouseenter:
 			 * - Scale up the DOM.bg element.
 			 * - Animate the number letters.
-			 * 
-			 * Mousemove: 
-			 * - tilt - move both the number, image and title elements. 
-			 * 
-			 * 
-			 * Mouseleave: 
+			 *
+			 * Mousemove:
+			 * - tilt - move both the number, image and title elements.
+			 *
+			 *
+			 * Mouseleave:
 			 * - Scale down the DOM.bg element.
 			 * - Animate the number letters.
 			 */
@@ -175,8 +175,8 @@
             const bounds = this.DOM.el.getBoundingClientRect();
             // Mouse position relative to the main element (this.DOM.el).
             const relmousepos = {
-                x : mousepos.x - bounds.left - docScrolls.left, 
-                y : mousepos.y - bounds.top - docScrolls.top 
+                x : mousepos.x - bounds.left - docScrolls.left,
+                y : mousepos.y - bounds.top - docScrolls.top
             };
             // Movement settings for the tilt elements.
             for (let key in this.DOM.tilt) {
@@ -259,7 +259,7 @@
         hide(delay = 0, withAnimation = true) { this.toggle(delay, withAnimation, false); }
 		toggle(delay, withAnimation, show = true) {
 			setTimeout(() => {
-				
+
 				this.DOM.titleLetters.forEach((letter,pos) => {
 					TweenMax.to(letter, !withAnimation ? 0 : show ? .6 : .3, {
 						ease: show ? Back.easeOut : Quart.easeIn,
@@ -299,7 +299,7 @@
             this.initEvents();
 		}
 		initEvents() {
-			// Clicking a grid item hides all the other grid items (ordered by proximity to the clicked one) 
+			// Clicking a grid item hides all the other grid items (ordered by proximity to the clicked one)
 			// and expands/opens the clicked one.
 			for (let item of this.items) {
 				item.DOM.el.addEventListener('click', (ev) => {
@@ -343,7 +343,7 @@
 			item.hideTexts();
 			// Set the item´s z-index to a high value so it overlaps any other grid item.
 			item.DOM.el.style.zIndex = 1000;
-			// Get the "grid__item-bg" width and height and set it explicitly, 
+			// Get the "grid__item-bg" width and height and set it explicitly,
 			// also set its top and left respective to the page.
 			const itemDim = this.getSizePosition(item.DOM.el);
 			item.DOM.bg.style.width = `${itemDim.width}px`;
@@ -368,7 +368,7 @@
 			const contentEl = this.contents[this.current];
 			// Set it to current.
 			contentEl.DOM.el.classList.add('content__item--current');
-			// Calculate the item´s image and content´s image sizes and positions. 
+			// Calculate the item´s image and content´s image sizes and positions.
 			// We need this so we can scale up and translate the item´s image to the same size and position of the content´s image.
 			const imgDim = this.getSizePosition(item.DOM.imgWrap);
 			const contentImgDim = this.getSizePosition(contentEl.DOM.img, false);
@@ -478,19 +478,19 @@
 		sortByDist(refPoint, itemsArray) {
 			let distancePairs = [];
 			let output = [];
-	
+
 			for(let i in itemsArray) {
 				const rect = itemsArray[i].DOM.el.getBoundingClientRect();
 				distancePairs.push([distance(refPoint,{x:rect.left+rect.width/2, y:rect.top+rect.height/2}), i]);
 			}
-	
+
 			distancePairs.sort((a,b) => a[0]-b[0]);
-	
+
 			for(let p in distancePairs) {
 				const pair = distancePairs[p];
 				output.push(itemsArray[pair[1]]);
 			}
-	
+
 			return output;
 		}
 		/**
@@ -504,9 +504,9 @@
 				this.items.filter(item => item != exclude).forEach((item, pos) => item[show ? 'show' : 'hide'](withAnimation));
 			}
 			else {
-				const refrect = exclude.DOM.el.getBoundingClientRect(); 
+				const refrect = exclude.DOM.el.getBoundingClientRect();
 				const refPoint = {
-					x: refrect.left+refrect.width/2, 
+					x: refrect.left+refrect.width/2,
 					y: refrect.top+refrect.height/2
 				};
 				this.sortByDist(refPoint, this.items.filter(item => item != exclude))
@@ -517,11 +517,11 @@
 
 	// Controls whether the item will have the "tilt" movement on hover (mousemove) or not.
 	let allowTilt = true;
-	
+
 	// Caching some stuff..
 	const body = document.body;
 	const docEl = document.documentElement;
-	
+
 	// Window sizes.
     let winsize;
     const calcWinsize = () => winsize = {width: window.innerWidth, height: window.innerHeight};

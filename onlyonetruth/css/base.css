@@ -175,10 +175,13 @@ main {
 	margin: 0 auto;
 	position: relative;
 	display: none;
+	direction: rtl;
+	text-align: right;
 }
 
 .js .grid {
 	display: block;
+	direction: rtl;
 }
 
 .grid__item {
@@ -186,10 +189,12 @@ main {
 	position: relative;
 	padding: 2.75rem;
 	margin-bottom: 5rem;
+	direction: ltr;
 }
 
 .grid__item-wrap {
 	position: relative;
+	text-align: left;
 }
 
 .grid__item-bg {

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("fonts/Inter-UI-Regular.woff2") format("woff2"),
+       url("fonts/Inter-UI-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 600;
+  src: url("fonts/Inter-UI-SemiBold.woff2") format("woff2"),
+       url("fonts/Inter-UI-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Basier Circle';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("fonts/basiercircle-regular-webfont.woff2") format("woff2"),
+       url("fonts/basiercircle-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Silka';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("fonts/silka-regular-webfont.woff2") format("woff2"),
+       url("fonts/silka-regular-webfont.woff") format("woff");
+}

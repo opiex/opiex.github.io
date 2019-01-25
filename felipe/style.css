@@ -14,10 +14,10 @@ html{
 
 
 body{
-  font-family: 'raleway', 'Helvetica', sans-serif;
+  font-family: 'Inter UI','raleway', 'Helvetica', sans-serif;
   font-size: 16px;
   text-align: center;
-  color: #121D47;
+  color: #2A242B;
   margin: 0;
   width: 100%;
 }
@@ -29,33 +29,56 @@ a{
 
 .header{
   text-align: left;
+  user-select: none;
+  -moz-user-select: none; /* Firefox */
+  -webkit-touch-callout: none; /* iOS Safari */
 }
 
 .logo{
-  position: fixed;
-  left: 50px;
-  top: 50px;
-  width: 60px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
   z-index: 99;
+  display: inline-block;
+}
+
+.logo img{
+    width: 60px;
+    vertical-align: middle;
+}
+
+.logo span{
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.nav{
+display: inline-block;
+float: right;
+margin-top: 62px;
+margin-right: 50px;
+}
+
+.nav-item{
+  margin-left: 35px;
 }
 
 .hero{
   text-align: center;
   margin-top: -20px;
-  color: #fff;
-  padding: 150px 30px 0px 30px;
-  background: #232323;
+  padding: 90px 30px 0px 30px;
+  background: #fff;
 }
 
 h1{
-  font-family: 'Poppins', 'Helvetica', sans-serif;
+  font-family: 'Silka', 'Helvetica', sans-serif;
   font-size: 52px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 h2{
-  font-family: 'Poppins', 'Helvetica', sans-serif;
+  font-family: 'Silka', 'Helvetica', sans-serif;
 }
 
 .hero p{
@@ -72,12 +95,11 @@ h2{
   overflow: auto;
   padding-top: 70px;
   background: #0029FF;
-  color: #fff;
-  padding: 120px 30px 120px 30px;
-}
 
-.explanation h2{
-  color: #fff;
+  background: rgba(251,230,255,0.35);
+  border-top: 1px solid #D600FB;
+  border-bottom: 1px solid #D600FB;
+  padding: 120px 30px 120px 30px;
 }
 
 .explanation-text-container{
@@ -93,22 +115,22 @@ margin-left: 130px;
 
 .small-video-container{
   background: url(img/smalldemo-bg.png);
-  background-size: 245px 250px;
+  background-size: 345px 350px;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 250px;
-  min-width: 245px;
+  min-height: 350px;
+  min-width: 345px;
   position: relative;
   display: inline-block;
 }
 
 .small-video-container img.gif{
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .sketch-logo{
   position: absolute;
-  bottom: 20px;
+  bottom: 70px;
   left: 10px;
 }
 
@@ -116,44 +138,110 @@ margin-left: 130px;
   width: 50px;
 }
 
-.title-container{
-  background: url('img/elements-bg.png');
-  background-size: 489px 251px;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 251px;
-  position: relative;
-}
-
-.features-text-container h2{
-  color: #284AFF;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -22px;
-  margin-left: -135px;
-}
-
-.features-text-container{
-  width: 80%;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 .features{
   margin: 0 auto;
   text-align: center;
   background: #fff;
   overflow: auto;
-  padding-top: 70px;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
 
-.features-text-container p{
-  line-height: 35px;
-  width: 100%;
-  max-width: 1300px;
-  display: inline;
+.features-graphic{
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+.features-graphic img{
+  max-width: 317px;
+}
+
+.features-text{
+  display: inline-block;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.features-text ul{
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.features-text li{
+  list-style-type: square;
+  margin-top:30px;
+}
+
+.kits, .awards{
+  text-align: left;
+  padding: 90px 30px 0px 30px;
+  max-width: 1100px;
   margin: 0 auto;
+  line-height: 28px;
+}
+
+.kits span{
+font-size: 12px;
+color: #DC25FB;
+}
+
+.kits p{
+  max-width: 70%;
+}
+
+.kits h2{
+  margin-top: 8px;
+}
+
+.kits img{
+  display: inline;
+  max-width: 535px;
+  width: 46%;
+  margin: 0 15px;
+  margin-top: 30px;
+}
+
+.awards{
+margin-top: 100px;
+}
+
+.medals{
+  display: inline-block;
+  width: 50%;
+  max-width: 600px;
+}
+
+.medal img{
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.medal p{
+  display: inline-block;
+}
+
+.medal{
+  margin-top: 30px;
+}
+
+.quote{
+  border-left: 3px solid #F6F7F7;
+  display: inline-block;
+  width: 30%;
+  max-width: 300px;
+  padding-left: 40px;
+  margin-left: 5%;
+  min-height: 150px;
+  padding-top: 30px;
+}
+
+.quote .author{
+  display: block;
+  margin-top: 15px;
+  color: #DC25FB;
+  font-size: 13px;
+  line-height: 22px;
 }
 
 h4{
@@ -229,10 +317,19 @@ hr{
 }
 
 .button-free{
-  background: rgba(255,255,255,0.13);
+  background: rgba(251,230,255,0.35);
+
+  -webkit-box-shadow:inset 0px 0px 0px 1px #D600FB;
+  -moz-box-shadow:inset 0px 0px 0px 1px #D600FB;
+  box-shadow:inset 0px 0px 0px 1px #D600FB;
+
+
+  /* border: 1px solid #D600FB; */
+  color: #D600FB;
 }
+
 .button-free:hover{
-  background: rgba(255,255,255,0.20);
+  background: rgba(251,230,255,0.6);
 }
 
 .badge-free, .badge-pro{
@@ -270,16 +367,16 @@ hr{
   opacity: 0.7;
 }
 
-
 .footer{
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom:90px;
-  margin-top: 80px;
-  background: rgba(255,0,180,0.05);
-  border-top: 1px solid #FF00B4;
+  margin-top: 200px;
   padding-left: 30px;
   padding-right: 30px;
+
+  background: rgba(251,230,255,0.35);
+  border-top: 1px solid #D600FB;
 }
 
 .footer a{
@@ -304,6 +401,11 @@ hr{
     top: 25px;
     left: 25px;
   }
+
+  .nav{
+    display: none;
+  }
+
   .hero{
     padding: 130px 10px 90px 10px;
   }
@@ -354,7 +456,45 @@ hr{
     text-align: center;
     display: block;
     margin: 0 auto;
+    margin-top: 60px;
     width: auto;
+}
+
+.features-graphic{
+  display: block;
+  text-align: center;
+}
+
+.kits{
+  text-align: center;
+  padding-top: 40px;
+}
+
+.kits img{
+  display: inline;
+  max-width: 535px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.kits p{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.awards{
+  margin-top: 30px;
+  padding-top: 70px;
+}
+
+.medals{
+  display: block;
+  width: 100%;
+}
+
+.quote{
+  width: 100%;
 }
 
 }

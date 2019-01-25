@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Felipe for Sketch</title>
+    <description>Magically turn wireframes to UI.</description>
+    <language>en</language>
+    
+    <item>
+      <title>Version 0.1.0</title>
+      <description>
+        <![CDATA[
+            <ul>
+              <li>First Version of Felipe!</li>
+            </ul>
+          ]]>
+      </description>
+      <enclosure url="https://arielverber.com/felipe" sparkle:version="1.1"/>
+    </item>
+
+  </channel>
+</rss>
