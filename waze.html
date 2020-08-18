@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Waze Map Editor by Ariel Verber</title>
+	<title>Ariel Verber - Waze Map Editor</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width">
 	<meta property="og:url" content="http://www.arielverber.com" />
@@ -12,123 +12,181 @@
 	<meta property="og:image" content="http://www.arielverber.com/img/metaimg.jpg" />
 
 
-	<script src="https://use.typekit.net/tgj7mpe.js"></script>
-	<script>
-		try {
-			Typekit.load({
-				async: true
-			});
-		} catch (e) {}
-	</script>
-
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<link type="text/css" rel="stylesheet" href="css/projects.css" />
-	<link type="text/css" rel="stylesheet" href="css/logoanimation.css" />
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link type="text/css" rel="stylesheet" href="css/projects-new.css" />
 
 </head>
 
 <body>
 
-	<div id="header">
-
+	<div id="header" data-aos="fade-in">
 		<a href="/">
 			<div class="logo">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="46" viewBox="0 0 69 46" version="1.1">
-			  <defs>
-			    <path d="M0.99 2.01C0.45 1.05 0.9 0.28 2 0.28L31 0.28C32.1 0.28 32.56 1.05 32.01 2.01L17.49 27.27C16.95 28.22 16.06 28.23 15.51 27.27L0.99 2.01Z" id="path-1"/>
-			  </defs>
-			  <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			    <g id="header" transform="translate(0.000000, -4.000000)">
-			      <g id="Group-2" transform="translate(0.000000, 4.000000)">
-			        <g id="Path-2" transform="translate(36.000000, 18.000000)">
-			          <use id="svglogo-part1" fill="#7C8384" xlink:href="#path-1"/>
-			          <polygon id="svglogo-shadow" fill="#000000" opacity="0.14" points="17.51 27.23 7 0.3 2.21 0.3"/>
-			        </g>
-			        <path id="svglogo-part2" d="M26.01 0.73C26.56-0.23 27.45-0.22 27.99 0.73L53.01 44.27C53.56 45.23 53.11 46 52 46L2 46C0.9 46 0.45 45.22 0.99 44.27L26.01 0.73ZM26.5 39.87C26.78 39.39 27.23 39.4 27.5 39.87L31 46 23 46 26.5 39.87Z" fill="#7C8384"/>
-			      </g>
-			    </g>
-			  </g>
-			</svg>
+				ARIEL VERBER
 			</div>
 		</a>
-
 		<div class="navigation">
 			<a href="/" class="selected">Works</a>
 			<a href="about.html">About</a>
-			<a href="https://medium.com/@arielverber" target="_blank">Thoughts</a>
+			<a href="thoughts.html">Thoughts</a>
 		</div>
-
-
 	</div>
 	<!-- header -->
 
 	<div class="container">
 		<div class="content">
-			<h1>Waze Map Editor</h1>
-			<p>Waze is one of the leading traffic and navigation apps in the world, used by millions every day. Much of its data is based on a community of volunteers from all around the world who work to make sure the data and the routing is accurate. The company was acquired by Google.</p>
+			<div class="project-header" data-aos="fade-in">
+				<div class="header-left">
+					<h1>Waze Map Editor</h1>
+					<p>Waze is one of the most popular navigation apps in the world.
+I joined as a contractor who’s in charge of its editor - a tool in which
+a community of volunteers from all around the world edit the map and provide most of the app’s map data.</p>
+				</div>
+				<div class="header-right">
+					<h4>Responsibilities</h4>
+					<ul>
+						<li>Product Design</li>
+						<li>UX Research</li>
+					</ul>
+				</div>
+			</div>
 
-<p>I joined as a contractor at May 2017, my main role was to take the Waze Map Editor - the tool where editors mostly fix roads and places, and redesign it from the ground up.</p>
+			<div class="single-col top-margin-from-text" data-aos="fade-in">
+				<img src="img/projects/waze/cover@3x.png">
+			</div>
+
+			<div class="centered top-margin-from-text" data-aos="fade-in">
+				<h2>Key Learnings</h2>
+				<p>Working on the Waze map editor was an unusual experience. It's a heavily used product with very invested power users, and in order to get things right, I had to deeply understand their biggest issues and expectations from the product team.</p>
+			</div>
+
+			<div class="section" data-aos="fade-in">
+				<div class="top-margin-from-text">
+					<div class="number">01</div>
+					<h3>How to approach a redesign</h3>
+					<p>When I joined Waze, it was very clear to the entire team that the editor needs a redesign. There was simply no room for any more new features, and there were many UI issues that were designed years ago and never changed.</p>
+
+					<div class="single-col top-margin-from-text">
+						<img src="img/projects/waze/old-design@2x.png" class="reduce-size">
+					</div>
+
+					<p class="top-margin-small">The redesign was a big task of over 40 screens and states. We knew we need to build it if we want to be able to build new things upon it.</p>
+					<div class="single-col top-margin-from-text">
+						<img src="img/projects/waze/redesign@2x.png">
+					</div>
+					<p>The initial feedback from the community was mixed. While some editors were happy that we're finally changing things, some complained about things like screen space, contrast and more.</p>
+					<p>This made us get back to the editing desk, and with a few simple changes like background-color change, spacing fixes, new features and performance improvement the new UI was finally adopted and implemented to everyone.</p>
+				</div>
+			</div>
+
+			<div class="section" data-aos="fade-in">
+				<div class="top-margin-from-text">
+					<div class="number">02</div>
+					<h3>How to talk to the users</h3>
+					<p>It took me a few months to really ‘see’ the people I’m designing for.</p>
+					<p>It really bothered me how outdated the website was, so I spent a lot of time on aesthetics. The team supported me and we shipped the redesign in 2 months, but instead of getting praises from the community, I got a lot of feedback about things I didn’t see as problems.</p>
+					<p>After this 'rough start' I started talking to the editors more regularly, read in their forums, and asked them to send me long recordings of them editing the map. This helped me really understand how they see the platform in their eyes.</p>
+					<p>For them, ‘good UX’ is a fast and functional interface, function over form.</p>
+					<p>When I changed my approach, it led to much more positive comments from our users, as I solved actual issues and designed things that saved them time and effort.</p>
+
+					<div class="single-col top-margin-from-text">
+						<img src="img/projects/waze/notifications@2x.png" class="reduce-size">
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="section spotlight" data-aos="fade-in">
+				<h2>Spotlight Project #1: Lane Guidance</h2>
+				<h4>Collaborating with different stakeholders to map the lanes of the entire world</h4>
+				<p>Lanes were one of the most requested features people wanted from Waze. To add lanes into the app, Waze needed its community to regularly fill in and maintain the lanes of each road in the world.</p>
+				<p>I worked with our developers to find the best solution, defined the right information structure of lanes as part of our existing database, and regularly asked for feedback from our power users to make sure the solution is the right one for our community.</p>
+				<p>The lanes feature in the mobile app was implemented after I no longer worked in Waze, and is <a href="https://www.phonearena.com/news/Waze-lane-guidance-navigation_id124275" target="_blank">slowly being rolled to more users</a>.</p>
+				<img src="img/projects/waze/lanes@2x.png" class="top-margin-small">
+				<p class="top-margin-from-text">The main design challenge was for the app to be able to ‘predict’ the best lane, according to the next 2-5 turns the driver needs to make. We solved it by using the junction feature that already existed.</p>
+
+				<img src="img/projects/waze/lanes2@2x.png" class="top-margin-small">
+
+				<p class="top-margin-small">The responses from the community were very positive.
+					<br>The feature was immediately adopted by the community and even received its own <a href="https://wazeopedia.waze.com/wiki/USA/Lanes" target="_blank">documentation in the Wazeopedia</a>.
+			</div>
+
+
+			<div class="section spotlight" data-aos="fade-in">
+				<h2>Spotlight Project #2: Map Legend</h2>
+				<p>To help the editors deal with all the changes, I’ve designed a fully responsive map legend. The legend shows all of the icons on the map, the editor symbols, road colors, and different types of map problems/update requests.</p>
+				<img src="img/projects/waze/legend@2x.png" class="top-margin-small">
+			</div>
+
+<hr>
 		</div>
-		<!--content-->
 	</div>
+	<!--content-->
 	<!--container-->
 
-	<div class="full-width project-bg waze-1 white top-margin-from-text">
-		<div class="project-text">
-			<h1>The previous editor</h1>
-			<p>The main challenge with redesigning the WME was the complexity of it - there were over 150 screens or states, filled with weird behaviors, and inconsistencies between colors, fonts, shapes. The example shown here is just one state, and it was already easy to spot many design mistakes that needed to be fixed:</p>
-		</div>
-		<img src="img/projects/waze/old.png">
+	<div class="content sayhi" data-aos="fade-in">
+		<h2>More Projects</h2>
+		<p>Here are some more projects which I thought are worth sharing:</p>
+		<li><a href="https://medium.muz.li/ui-ux-case-study-designing-a-better-cinema-experience-29abc7cfb94f" target="_blank">UI/UX Case Study : Designing a better cinema experience</a> - A case study published in Medium.</li>
+		<li><a href="/felipe" target="_blank">Felipe</a> - A Sketch plugin I released that got featured in the official Sketch website and was downloaded over 5000 times.</li>
+</a>
 	</div>
 
-	<div class="full-width project-bg waze-2">
-		<div class="project-text">
-			<h1>The redesign</h1>
-			<p>Since there were many new features upcoming in the roadmap, the time scheduled for the development of the redesign was limited. I couldn’t just decide to rethink it from the ground up, and had to improve it as much as I could without breaking everything. I focused on fixing the main things that bothered the users.</p>
-			</div>
-			<img src="img/projects/waze/redesign.png">
-			<img src="img/projects/waze/chat.png">
-			<img src="img/projects/waze/closures.png">
-			<img src="img/projects/waze/login.png">
-</div>
 
-	<div class="full-width project-bg waze-notifications">
-		<div class="project-text">
-			<h1>Update requests & Map updates</h1>
-			<p>One of the main features in the maps are the reports. Usually reported by the users or an automated script and managed by the volunteers. The original ones were clumsy. There were elements with scroll inside scrolls, the CTAs were radio buttons, and there was a clear absence of whitespace. I made sure to make them more functional, fixed crucial UX issues, and designed CTAs to help them handle them with only one click.</p>
-			</div>
-			<img src="img/projects/waze/notifications.png">
-		</div>
 
-		<div class="full-width project-bg white waze-legend">
-			<div class="project-text">
-				<h1>Map legend</h1>
-				<p>To help the editors deal with all the changes, I’ve designed a fully responsive map legend. The legend shows all of the icons on the map, the editor symbols, road colors, and different types of map problems / update requests.</p>
-				</div>
-				<img src="img/projects/waze/legend.png">
-			</div>
 
-	<a href="stripes.html">
-		<div class="next-up full-width">
-			<span>Next Project</span>
-			<svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"><g fill="none"><g fill="#263233"><path d="M5.6 0.8C5.6 0.9 5.6 1.1 5.7 1.2L8.1 3.6 0.6 3.6C0.2 3.6 0 3.8 0 4.1 0 4.4 0.2 4.7 0.6 4.7L8.1 4.7 5.7 7C5.6 7.1 5.6 7.3 5.6 7.4 5.6 7.6 5.6 7.7 5.7 7.8 6 8.1 6.3 8.1 6.5 7.8L9.8 4.5C9.9 4.5 9.9 4.5 9.9 4.4 10 4.3 10 4.1 10 3.9 9.9 3.8 9.9 3.8 9.8 3.7L6.5 0.4C6.3 0.2 6 0.2 5.7 0.4 5.6 0.5 5.6 0.6 5.6 0.8Z"/></g></g></svg>
-			<h1>Stripes</h1>
-		</div>
-	</a>
-
-	<div class="container">
+	<div class="container" data-aos="fade-in">
 		<div class="content">
 
-			<div class="footer">
-				<span>Made with love.</span>
-				<div class="copyrights"><span>Ariel Verber 2017</span></div>
+			<div id="footer">
+				<a href="/">
+					<div class="logo">
+						ARIEL VERBER
+					</div>
+				</a>
+				<div class="navigation">
+					<a href="https://twitter.com/arielopie" target="_blank">Twitter</a> <span class="slash">/</span>
+					<a href="https://medium.com/@arielverber" target="_blank">Medium</a> <span class="slash">/</span>
+					<a href="https://www.instagram.com/ariel.verber/" target="_blank">Instagram</a> <span class="slash">/</span>
+					<a href="https://www.facebook.com/arielverber/" target="_blank">Facebook</a>
+				</div>
 			</div>
 
 		</div>
 	</div>
 
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+			AOS.init({
+			  // Global settings:
+			  disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+			  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+			  initClassName: 'aos-init', // class applied after initialization
+			  animatedClassName: 'aos-animate', // class applied on animation
+			  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+			  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+			  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+			  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+			  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+			  offset: 0, // offset (in px) from the original trigger point
+			  delay: 0, // values from 0 to 3000, with step 50ms
+			  duration: 500, // values from 0 to 3000, with step 50ms
+			  easing: 'ease', // default easing for AOS animations
+			  once: true, // whether animation should happen only once - while scrolling down
+			  mirror: false, // whether elements should animate out while scrolling past them
+			  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+			});
+	</script>
 </body>
 
 </html>

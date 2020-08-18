@@ -1,7 +1,0 @@
-#svglogo-part2, #svglogo-part1{
-  transition: 0.5s all;
-}
-
-svg:hover #svglogo-part2, svg:hover #svglogo-part1{
-  fill: #5D6566;
-}

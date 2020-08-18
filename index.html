@@ -11,107 +11,96 @@
 	<meta property="og:description" content="Shalom." />
 	<meta property="og:image" content="http://www.arielverber.com/img/metaimg.jpg" />
 
-
-	<script src="https://use.typekit.net/tgj7mpe.js"></script>
-	<script>
-		try {
-			Typekit.load({
-				async: true
-			});
-		} catch (e) {}
-	</script>
-
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<link type="text/css" rel="stylesheet" href="css/projects.css" />
-	<link type="text/css" rel="stylesheet" href="css/logoanimation.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 
 </head>
 
 <body>
 
-	<div id="header">
-
+	<div id="header" data-aos="fade-in">
 		<a href="/">
 			<div class="logo">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="46" viewBox="0 0 69 46" version="1.1">
-			  <defs>
-			    <path d="M0.99 2.01C0.45 1.05 0.9 0.28 2 0.28L31 0.28C32.1 0.28 32.56 1.05 32.01 2.01L17.49 27.27C16.95 28.22 16.06 28.23 15.51 27.27L0.99 2.01Z" id="path-1"/>
-			  </defs>
-			  <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			    <g id="header" transform="translate(0.000000, -4.000000)">
-			      <g id="Group-2" transform="translate(0.000000, 4.000000)">
-			        <g id="Path-2" transform="translate(36.000000, 18.000000)">
-			          <use id="svglogo-part1" fill="#7C8384" xlink:href="#path-1"/>
-			          <polygon id="svglogo-shadow" fill="#000000" opacity="0.14" points="17.51 27.23 7 0.3 2.21 0.3"/>
-			        </g>
-			        <path id="svglogo-part2" d="M26.01 0.73C26.56-0.23 27.45-0.22 27.99 0.73L53.01 44.27C53.56 45.23 53.11 46 52 46L2 46C0.9 46 0.45 45.22 0.99 44.27L26.01 0.73ZM26.5 39.87C26.78 39.39 27.23 39.4 27.5 39.87L31 46 23 46 26.5 39.87Z" fill="#7C8384"/>
-			      </g>
-			    </g>
-			  </g>
-			</svg>
+				ARIEL VERBER
 			</div>
 		</a>
-
 		<div class="navigation">
 			<a href="/" class="selected">Works</a>
 			<a href="about.html">About</a>
-			<a href="https://medium.com/@arielverber" target="_blank">Thoughts</a>
+			<a href="thoughts.html">Thoughts</a>
 		</div>
-
-
 	</div>
 	<!-- header -->
 
 	<div class="container">
 		<div class="content">
-			<h1>Shalom, I’m Ariel.</h1>
+			<h1 data-aos="fade-in">I’m Ariel, a Product Designer based in Tel Aviv.<br>
+				I'm passionate about the relationship between design, experience, and business impact. <br>
+				<div class="more-bio" data-aos="fade-in">* I also love writing, building digital products, singing in the shower and I make a hell of an omelet.</div></h1>
 
-			<a href="momento.html">
-				<div class="project full-width">
-					<img src="img-alternate/momento.png" />
-					<div class="overlay momento-overlay">
-						<div class="project-name">Momento - Gif Maker</div>
+			<a href="mixtiles.html" data-aos="fade-in">
+				<div class="project full-width mixtiles-project" id="mixtiles-thumbnail">
+					<img src="img/thumbnail/mixtiles@2x.png" />
+					<div class="project-description">
+						<h2>Mixtiles</h2>
+						<p>I’m currently leading the UX of new products at Mixtiles and taking part of its growth team.</p>
+						<div class="button">View Project</div>
 					</div>
 				</div>
 			</a>
 
-			<a href="waze.html">
-				<div class="project full-width">
-					<img src="img-alternate/waze.png" />
-					<div class="overlay waze-overlay">
-						<div class="project-name">Waze Map Editor</div>
+
+			<a href="joytunes.html" data-aos="fade-in">
+				<div class="project full-width joytunes-project" id="joytunes-thumbnail">
+					<img src="img/thumbnail/joytunes@2x.png" />
+					<div class="project-description">
+						<h2>JoyTunes</h2>
+						<p>I helped JoyTunes take its main app, Simply Piano, to new heights.</p>
+						<div class="button">View Project</div>
 					</div>
 				</div>
 			</a>
 
-			<a href="raphael.html">
-				<div class="project third-width right-project">
-					<img src="img-alternate/ultraf.png" />
-					<div class="overlay raphael-overlay">
-						<div class="project-name">Raphael Ultraf</div>
+
+			<a href="waze.html"  data-aos="fade-in">
+				<div class="project full-width waze-project" id="waze-thumbnail">
+					<img src="img/thumbnail/waze@2x.png" />
+					<div class="project-description">
+						<h2>Waze Map Editor</h2>
+						<p>I helped a fantastic community of map editors improve navigation of the entire world in one platform.</p>
+						<div class="button">View Project</div>
 					</div>
 				</div>
 			</a>
 
-			<a href="stripes.html">
-				<div class="project twothirds-width">
-					<img src="img-alternate/stripes.png" />
-					<div class="overlay stripes-overlay">
-						<div class="project-name">Stripes</div>
+
+			<a href="/felipe" target="_blank" data-aos="fade-in">
+				<div class="project full-width felipe-project">
+					<img src="img/thumbnail/felipe@2x.png" />
+					<div class="project-description">
+						<h2>Felipe (Sketch Plugin)</h2>
+						<p>I built an innovative Sketch Plugin that got some people talking about and featuring it.</p>
+						<div class="button">Visit Website</div>
 					</div>
 				</div>
 			</a>
 
-			<a href="mobilize.html">
-				<div class="project full-width">
-					<img src="img-alternate/mobilize.png" />
-					<div class="overlay mobilize-overlay">
-						<div class="project-name">Mobilize</div>
+
+			<a href="https://medium.muz.li/ui-ux-case-study-designing-a-better-cinema-experience-29abc7cfb94f" target="_blank" data-aos="fade-in">
+				<div class="project full-width cinema-project" id="cinema-thumbnail">
+					<img src="img/thumbnail/cinema@2x.png" />
+					<div class="project-description">
+						<h2>Cinema App</h2>
+						<p>I designed a cinema app experience and I shared my process in a case study that went viral.</p>
+						<div class="button">Read Case Study</div>
 					</div>
 				</div>
 			</a>
-
 
 		</div>
 		<!--content-->
@@ -120,15 +109,51 @@
 
 	<div class="container">
 		<div class="content">
-				<div class="footer">
-					<span>Made with love.</span>
-					<div class="copyrights"><span>Ariel Verber 2017</span></div>
+
+			<div id="footer">
+				<a href="/">
+					<div class="logo">
+						ARIEL VERBER
+					</div>
+				</a>
+				<div class="navigation">
+					<a href="https://twitter.com/arielopie" target="_blank">Twitter</a> <span class="slash">/</span>
+					<a href="https://medium.com/@arielverber" target="_blank">Medium</a> <span class="slash">/</span>
+					<a href="https://www.instagram.com/ariel.verber/" target="_blank">Instagram</a> <span class="slash">/</span>
+					<a href="https://www.facebook.com/arielverber/" target="_blank">Facebook</a>
 				</div>
+			</div>
 
 		</div>
 	</div>
 
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
+	<script>
+			AOS.init({
+			  // Global settings:
+			  disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+			  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+			  initClassName: 'aos-init', // class applied after initialization
+			  animatedClassName: 'aos-animate', // class applied on animation
+			  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+			  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+			  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+			  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+			  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+			  offset: -300, // offset (in px) from the original trigger point
+			  delay: 0, // values from 0 to 3000, with step 50ms
+			  duration: 500, // values from 0 to 3000, with step 50ms
+			  easing: 'ease', // default easing for AOS animations
+			  once: true, // whether animation should happen only once - while scrolling down
+			  mirror: false, // whether elements should animate out while scrolling past them
+			  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+			});
+	</script>
+
 </body>
 
 </html>
