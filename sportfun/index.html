@@ -57,12 +57,20 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
 
+    <script>
+    fbq('track', 'Contact');
+
+    document.querySelector('.whatsapp').click(function() {
+      fbq('track', 'Contact');
+    });
+    </script>
+
 </head>
 
 
 <body>
   <center>
-    <a href="https://wa.me/972523718588">
+    <a href="https://wa.me/972523718588" class="whatsapp">
 <img src="sportfun.png">
 </a>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFYhaxgQYP_HfzewaS_hPWZbTOAtKSDkiXkf99A75oHF6nQw/viewform?embedded=true" width="350" height="693" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
