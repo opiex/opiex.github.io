@@ -58,10 +58,10 @@
     <!-- End Facebook Pixel Code -->
 
     <script>
-    document.getElementsByClassName('.whatsapp').click(function() {
+    document.getElementsByClassName('.whatsapp').onclick = function() {
       fbq('track', 'Contact');
       console.log("fbq called");
-    });
+    };
     </script>
 
 </head>
