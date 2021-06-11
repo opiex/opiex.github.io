@@ -58,9 +58,7 @@
     <!-- End Facebook Pixel Code -->
 
     <script>
-    fbq('track', 'Contact');
-
-    document.querySelector('.whatsapp').click(function() {
+    document.getElementsByClassName('.whatsapp').click(function() {
       fbq('track', 'Contact');
       console.log("fbq called");
     });
